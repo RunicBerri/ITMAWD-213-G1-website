@@ -1,0 +1,805 @@
+/* Default */
+.navbar{
+    display: grid;
+    grid-template-rows: repeat(7,75px);
+    grid-template-columns: 100%;
+    grid-auto-rows: 100%;
+    margin-bottom: 0.2em;
+    row-gap: 10px;
+}
+
+.memberList{
+    display: grid;
+    grid-auto-rows: minmax(50px, 100px);
+    grid-auto-columns: minmax(50px, 100px);
+}
+
+.member-closeBtn{
+    grid-area: 1/14/1/14;
+}
+
+.mem1{
+    grid-area: 2/2/4/4;
+}
+
+.mem2{
+    grid-area: 2/5/4/7;
+}
+
+.mem3{
+    grid-area: 2/9/4/11;
+}
+
+.mem4{
+    grid-area: 2/12/4/14;
+}
+
+.mem5{
+    grid-area: 5/3/7/5;
+}
+
+.mem6{
+    grid-area: 5/7/7/9;
+}
+
+.mem7{
+    grid-area: 5/11/7/13;
+}
+
+/*Main Page*/
+.parentContainer{
+    display: grid;
+    grid-template-rows: 700px 700px 200px;
+    grid-template-columns: 100%;
+    gap: 2em;
+}
+
+.footer{
+    display: grid;
+    grid-auto-rows: minmax(50px, 50px);
+    grid-auto-columns: minmax(50px, 50px);
+    gap: 1em;
+}
+
+.foot1{
+    grid-area: 2/1/4/7;
+}
+
+.foot2{
+    grid-area: 2/20/2/20;
+}
+
+.foot3{
+    grid-area: 2/21/2/21;
+}
+
+.foot4{
+    grid-area: 2/22/2/22;
+}
+
+.home-grid {
+    display: grid;
+    grid-auto-rows: minmax(50px, 100px);
+    grid-auto-columns: minmax(50px, 90px);
+}
+
+.home1{
+    grid-area: 3/8/3/10;
+}
+
+.home2{
+    grid-area: 6/6/6/12;
+}
+
+.about-us-grid{
+    display: grid;
+    grid-auto-rows: minmax(50px, 100px);
+    grid-auto-columns: minmax(50px, 100px);
+    gap: 1em;
+}
+
+.about1{
+    grid-area:1/1/6/15 ;
+}
+
+.about2{
+    grid-area: 6/1/12/8;
+}
+
+.about3{
+    grid-area: 6/8/12/15;
+}
+
+/*App Page*/
+.appContainer{
+    display: grid;
+    grid-template-rows: 600px 700px 700px 400px 200px;
+    grid-template-columns: 100%;
+    grid-gap: 1em;
+}
+
+.about-app{
+    display: grid;
+    grid-auto-rows: minmax(50px, 70px);
+    grid-auto-columns: minmax(50px, 100px);
+}
+
+.abtApp1{
+    grid-area: 2/1/9/10;
+}
+
+.abtApp2{
+    grid-area: 1/11/9/16;
+}
+
+.game-trailer{
+    display: grid;
+    grid-auto-rows: minmax(50px, 70px);
+    grid-auto-columns: minmax(50px, 100px);
+}
+
+.trailerTxt{
+    grid-area: 1/7/3/10;
+}
+
+.trailer{
+    grid-area: 3/4/10/13;
+}
+
+.app-features{
+    display: grid;
+    grid-auto-rows: minmax(50px, 100px);
+    grid-auto-columns: minmax(50px, 100px);
+}
+
+.featuresTxt{
+    grid-area: 1/7/2/10;
+}
+
+.feature1{
+    grid-area: 2/3/4/5;
+}
+
+.feature2{
+    grid-area: 2/6/4/8;
+}
+
+.feature3{
+    grid-area: 2/9/4/11;
+}
+
+.feature4{
+    grid-area: 2/12/4/14;
+}
+
+.featureContent{
+    grid-area: 4/2/7/15;
+}
+
+.download{
+    display: grid;
+    grid-auto-rows: minmax(50px, 100px);
+    grid-auto-columns: minmax(50px, 50px);
+}
+
+.dlg{
+    grid-area: 1/12/1/19;
+}
+
+.dl1{
+    grid-area: 3/6/3/13;
+}
+
+.dl2{
+    grid-area: 3/18/3/25;
+}
+/* Phones */
+@media screen and (max-width: 480px) {
+    .navbar{
+        display: grid;
+        grid-template-rows: repeat(7,50px);
+        grid-template-columns: 100%;
+        grid-auto-rows: 100%;
+        margin-bottom: 0.2em;
+        row-gap: 10px;
+    }
+    
+    .memberList{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 100px);
+    }
+    
+    .member-closeBtn{
+        grid-area: 1/6/1/6;
+    }
+    
+    .mem1{
+        grid-area: 2/1/2/3;
+    }
+    
+    .mem2{
+        grid-area: 2/3/2/5;
+    }
+    
+    .mem3{
+        grid-area: 2/5/2/7;
+    }
+    
+    .mem4{
+        grid-area: 4/1/4/3;
+    }
+    
+    .mem5{
+        grid-area: 4/3/4/5;
+    }
+    
+    .mem6{
+        grid-area: 4/5/4/7;
+    }
+    
+    .mem7{
+        grid-area: 6/3/6/5;
+    }
+    
+    /*Main Page*/
+    .parentContainer{
+        display: grid;
+        grid-template-rows: 400px 1000px 200px;
+        grid-template-columns: 100%;
+        grid-gap: 1em;
+    }
+    
+    .footer{
+        display: grid;
+        grid-auto-rows: minmax(50px, 50px);
+        grid-auto-columns: minmax(50px, 50px);
+        gap: 1em;
+    }
+    
+    .foot1{
+        grid-area: 2/1/4/5;
+    }
+    
+    .foot2{
+        grid-area: 2/5/2/5;
+    }
+    
+    .foot3{
+        grid-area: 2/6/2/6;
+    }
+    
+    .foot4{
+        grid-area: 2/7/2/7;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 100px);
+    }
+          
+    .home1{
+        grid-area: 1/1/5/6;
+    }
+    
+    .home2{
+        grid-area: 6/1/6/7;
+    }
+
+    .about-us-grid{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 100px);
+        gap: 1em;
+    }
+
+    .about1{
+        grid-area:1/1/5/7 ;
+    }
+
+    .about2{
+        grid-area: 5/1/8/7;
+    }
+
+    .about3{
+        grid-area: 8/1/11/7;
+    }
+
+    /*App Page*/
+    .appContainer{
+        display: grid;
+        grid-template-rows: 775px 500px 750px 300px 200px;
+        grid-template-columns: 100%;
+        grid-gap: 1em;
+    }
+
+    .about-app{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 100px);
+    }
+    
+    .abtApp1{
+        grid-area: 1/1/6/8;
+    }
+    
+    .abtApp2{
+        grid-area: 7/1/14/9;
+    }
+
+    .game-trailer{
+        display: grid;
+        grid-auto-rows: minmax(50px, 70px);
+        grid-auto-columns: minmax(50px, 100px);
+    }
+    
+    .trailerTxt{
+        grid-area: 1/2/3/7;
+    }
+    
+    .trailer{
+        grid-area: 3/1/7/8;
+    }
+
+    .app-features{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 50px);
+    }
+    
+    .featuresTxt{
+        grid-area: 1/2/2/9;
+    }
+    
+    .feature1{
+        grid-area: 2/3/3/5;
+    }
+    
+    .feature2{
+        grid-area: 2/6/3/8;
+    }
+    
+    .feature3{
+        grid-area: 4/3/5/5;
+    }
+    
+    .feature4{
+        grid-area: 4/6/5/8;
+    }
+    
+    .featureContent{
+        grid-area: 5/2/9/10;
+    }
+
+    .download{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 60px);
+        column-gap: 20px;
+    }
+    
+    .dlg{
+        grid-area: 1/2/1/6;
+    }
+    
+    .dl1{
+        grid-area: 2/1/2/4;
+    }
+    
+    .dl2{
+        grid-area: 2/4/2/7;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {     
+    .memberList{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 60px);
+    }
+    
+    .member-closeBtn{
+        grid-area: 1/12/1/12;
+    }
+    
+    .mem1{
+        grid-area: 2/1/2/3;
+    }
+    
+    .mem2{
+        grid-area: 2/4/2/6;
+    }
+    
+    .mem3{
+        grid-area: 2/7/2/9;
+    }
+    
+    .mem4{
+        grid-area: 2/10/2/12;
+    }
+    
+    .mem5{
+        grid-area: 4/3/4/5;
+    }
+    
+    .mem6{
+        grid-area: 4/6/4/8;
+    }
+    
+    .mem7{
+        grid-area:  4/9/4/11;
+    }
+    
+    /*Main Page*/
+    .parentContainer{
+        display: grid;
+        grid-template-rows: 400px 600px 200px;
+        grid-template-columns: 100%;
+        grid-gap: 1em;
+    }
+
+    .footer{
+        display: grid;
+        grid-auto-rows: minmax(50px, 50px);
+        grid-auto-columns: minmax(50px, 50px);
+        gap: 1em;
+    }
+    
+    .foot1{
+        grid-area: 2/1/4/6;
+    }
+    
+    .foot2{
+        grid-area: 2/9/2/9;
+    }
+    
+    .foot3{
+        grid-area: 2/10/2/10;
+    }
+    
+    .foot4{
+        grid-area: 2/11/2/11;
+    }
+    
+    .home-grid {
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 50px);
+    }
+          
+    .home1{
+        grid-area: 1/5/5/12;
+    }
+    
+    .home2{
+        grid-area: 6/3/6/14;
+    }
+
+    .about-us-grid{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 60px);
+        gap: 1em;
+    }
+
+    .about1{
+        grid-area:1/1/4/12 ;
+    }
+
+    .about2{
+        grid-area: 4/1/7/6;
+    }
+
+    .about3{
+        grid-area: 4/6/7/12;
+    }
+
+    /*App Page*/
+    .appContainer{
+        display: grid;
+        grid-template-rows: 700px 500px 500px 200px;
+        grid-template-columns: 100%;
+        grid-gap: 1em;
+    }
+
+    .about-app{
+        display: grid;
+        grid-auto-rows: minmax(50px, 50px);
+        grid-auto-columns: minmax(50px, 50px);
+    }
+    
+    .abtApp1{
+        grid-area: 2/1/9/15;
+    }
+    
+    .abtApp2{
+        grid-area: 9/1/14/16;
+    }
+
+    .game-trailer{
+        display: grid;
+        grid-auto-rows: minmax(50px, 50px);
+        grid-auto-columns: minmax(50px, 50px);
+    }
+    
+    .trailerTxt{
+        grid-area: 1/5/4/12;
+    }
+    
+    .trailer{
+        grid-area: 4/2/10/15;
+    }
+
+    .app-features{
+        display: grid;
+        grid-auto-rows: minmax(50px, 50px);
+        grid-auto-columns: minmax(50px, 50px);
+    }
+    
+    .featuresTxt{
+        grid-area: 1/5/2/12;
+    }
+    
+    .feature1{
+        grid-area: 3/3/5/5;
+    }
+    
+    .feature2{
+        grid-area: 3/6/5/8;
+    }
+    
+    .feature3{
+        grid-area: 3/9/5/11;
+    }
+    
+    .feature4{
+        grid-area: 3/12/5/14;
+    }
+    
+    .featureContent{
+        grid-area: 5/2/11/16;
+    }
+
+    .download{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 60px);
+        column-gap: 20px;
+    }
+    
+    .dlg{
+        grid-area: 1/4/1/7;
+    }
+    
+    .dl1{
+        grid-area: 2/2/2/5;
+    }
+    
+    .dl2{
+        grid-area: 2/6/2/9;
+    }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home1{
+        grid-area: 3/4/3/9;
+    }
+   
+    .home2{
+        grid-area: 6/3/6/10;
+    }
+   
+    .member-closeBtn{
+        grid-area: 1/12/1/12;
+    }
+    
+    .mem1{
+        grid-area: 2/1/4/4;
+    }
+    
+    .mem2{
+        grid-area: 2/4/4/7;
+    }
+    
+    .mem3{
+        grid-area: 2/7/4/10;
+    }
+    
+    .mem4{
+        grid-area: 2/10/4/13;
+    }
+    
+    .mem5{
+        grid-area: 5/2/7/5;
+    }
+    
+    .mem6{
+        grid-area: 5/5/7/8;
+    }
+    
+    .mem7{
+        grid-area:  5/8/7/11;
+    }
+
+    .foot1{
+        grid-area: 2/1/4/7;
+    }
+    
+    .foot2{
+        grid-area: 2/13/2/13;
+    }
+    
+    .foot3{
+        grid-area: 2/14/2/14;
+    }
+    
+    .foot4{
+        grid-area: 2/15/2/15;
+    }
+    
+
+    /*App Page*/      
+     
+    .trailerTxt{
+        grid-area: 1/4/3/8;
+    }
+   
+    .trailer{
+        grid-area: 3/2/10/10;
+    }
+   
+    .featuresTxt{
+        grid-area: 1/7/2/10;
+    }
+    
+    .feature1{
+        grid-area: 2/3/4/5;
+    }
+    
+    .feature2{
+        grid-area: 2/6/4/8;
+    }
+    
+    .feature3{
+        grid-area: 2/9/4/11;
+    }
+    
+    .feature4{
+        grid-area: 2/12/4/14;
+    }
+    
+    .featureContent{
+        grid-area: 4/2/8/15;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .home1{
+        grid-area: 3/5/3/8;
+    }
+   
+    .home2{
+        grid-area: 6/3/6/10;
+    }
+
+    .foot1{
+        grid-area: 2/1/4/7;
+    }
+    
+    .foot2{
+        grid-area: 2/13/2/13;
+    }
+    
+    .foot3{
+        grid-area: 2/14/2/14;
+    }
+    
+    .foot4{
+        grid-area: 2/15/2/15;
+    }
+   
+    /*App Page*/      
+    .trailerTxt{
+        grid-area: 1/4/3/8;
+    }
+   
+    .trailer{
+        grid-area: 3/2/10/10;
+    }
+   
+    .featuresTxt{
+        grid-area: 1/5/2/8;
+    }
+   
+    .feature1{
+        grid-area: 2/1/4/3;
+    }
+   
+    .feature2{
+        grid-area: 2/4/4/6;
+    }
+   
+    .feature3{
+        grid-area: 2/7/4/9;
+    }
+   
+    .feature4{
+        grid-area: 2/12/4/10;
+    }
+   
+    .featureContent{
+        grid-area: 4/2/7/11;
+    }
+
+    .download{
+        display: grid;
+        grid-auto-rows: minmax(50px, 100px);
+        grid-auto-columns: minmax(50px, 50px);
+    }
+    
+    .dlg{
+        grid-area: 1/7/1/15;
+    }
+    
+    .dl1{
+        grid-area: 2/2/2/9;
+    }
+    
+    .dl2{
+        grid-area: 2/13/2/20;
+    }
+}
+@media (min-width: 1440px){
+
+    .member-closeBtn{
+        grid-area: 1/14/1/14;
+    }
+    
+    .mem1{
+        grid-area: 2/2/5/5;
+    }
+    
+    .mem2{
+        grid-area: 2/5/5/8;
+    }
+    
+    .mem3{
+        grid-area: 2/8/5/11;
+    }
+    
+    .mem4{
+        grid-area: 2/11/5/14;
+    }
+    
+    .mem5{
+        grid-area: 6/3/9/6;
+    }
+    
+    .mem6{
+        grid-area: 6/6/9/9;
+    }
+    
+    .mem7{
+        grid-area:  6/9/9/12;
+    }
+
+
+    .foot1{
+        grid-area: 2/1/4/7;
+    }
+    
+    .foot2{
+        grid-area: 2/19/2/19;
+    }
+    
+    .foot3{
+        grid-area: 2/20/2/20;
+    }
+    
+    .foot4{
+        grid-area: 2/21/2/21;
+    }
+}

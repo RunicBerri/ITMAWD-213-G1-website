@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Rae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <button class="openBtn" onclick="toggleSidebar()">☰</button>
+
+    <button class="memberBtn" onclick="toggleMembers()"><img id="memberImg" src="images/members.png" draggable="false" ></button>
+    
+    <div class="navbar" id="navbar">
+        <button class="closeBtn" onclick="toggleSidebar()">✖</button>
+        <!-- home -->
+        <div class="nav1">
+            <a href="#home" onclick="toggleSidebar()">Home</a>
+        </div>
+
+        <!-- about us -->
+        <div class="nav2">
+            <a href="#aboutUs" onclick="toggleSidebar()">About Us</a>
+        </div>
+
+        <!-- about app -->
+        <div class="nav2">
+            <a href="app.html" onclick="toggleSidebar()">App</a>
+        </div>
+        
+
+    </div>    
+
+    <div class="memberList" id="memberList">
+        <button class="member-closeBtn" onclick="toggleMembers()">✖</button>
+        <div class="mem1">
+            <img src="images/art.png" draggable="false">
+            <h1>Artignian Cuaresma</h1>
+        </div>
+
+        <div class="mem2">
+            <img src="images/ayisha.png" draggable="false">
+            <h1>Ayisha Corre</h1>
+        </div>
+
+        <div class="mem3">
+            <img src="images/chelsy.jpg" draggable="false">
+            <h1>Chelsy Guiterrez</h1>
+        </div>
+
+        <div class="mem4">
+            <img src="images/elaiza.png" draggable="false">
+            <h1>Elaiza Ponteras</h1>
+        </div>
+
+        <div class="mem5">
+            <img src="images/janna.png" draggable="false">
+            <h1>Janna Francisco</h1>
+        </div>
+
+        <div class="mem6">
+            <img src="images/khloe.png" draggable="false">
+            <h1>Khloe Tatel</h1>
+        </div>
+
+        <div class="mem7">
+            <img src="images/reniel.png" draggable="false">
+            <h1>Reniel Jardin</h1>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>JACK-RAE</h1>
+    </div>
+
+    <div class="parentContainer">
+
+        <!-- home -->
+        <div class="home-grid" id="home">
+            <div class="home1">
+                <img  class="logo" src="images/logo.png" draggable="false">
+            </div>
+            <div class="home2">
+                <h1>"For every leap defies limits</h1>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="about-us-grid" id="aboutUs">
+            <div class="about1">
+                <h2>About Us</h2>
+                <p>JACK-RAE is a company that develops games and is dedicated to create fun and challenging platformer games. 
+                Our mission is for players to grow, learn, and enjoy every moment of the adventure while playing our app.</p>
+            </div>
+
+            <div class="about2">
+                <h2>Mission</h2>
+                <p>To create an exciting game that will challenge the players and for them to do
+                their best. To make games that are not just fun to play but also inspire the players to grow, learn, and enjoy playing. 
+                To create an engaging game with a storyline, and they will surely love.</p>
+            </div>
+
+            <div class="about3">
+                <h2>Vision</h2>
+                <p>To develop the JACK-RAE company to be well-known in the gaming industry in the next 5 years.</p>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <h1 class="foot1">Copyright @2025</h1>
+            <a href="https://www.facebook.com/artigniancedric.b.curaesma" target="_blank" rel="noopener noreferrer" class="foot2"><img src="images/facebook.png" draggable="false" alt=""></a>
+            <a href="https://www.tiktok.com/@art242007" target="_blank" rel="noopener noreferrer" class="foot3"><img src="images/tik-tok.png" draggable="false" alt=""></a>
+            <a href="https://www.instagram.com/art_nian/" target="_blank" rel="noopener noreferrer" class="foot4"><img src="images/instagram.png" draggable="false" alt=""></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

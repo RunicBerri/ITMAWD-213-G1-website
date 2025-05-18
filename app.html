@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Rae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <button class="openBtn" onclick="toggleSidebar()">☰</button>
+
+    <button class="memberBtn" onclick="toggleMembers()"><img id="memberImg" src="images/members.png" draggable="false" ></button>
+    
+    <div class="navbar" id="navbar">
+        <button class="closeBtn" onclick="toggleSidebar()">✖</button>
+        <!-- home -->
+        <div class="nav1">
+            <a href="home.html" onclick="toggleSidebar()">Home</a>
+        </div>
+
+        <!-- about app -->
+        <div class="nav3">
+            <a href="#aboutApp" onclick="toggleSidebar()">About App</a>
+        </div>
+
+        <!-- game trailer -->
+        <div class="nav4">
+            <a href="#gameTrailer" onclick="toggleSidebar()">Game Trailer</a>
+        </div>
+
+        <!-- app features -->
+        <div class="nav5">
+            <a href="#appFeatures" onclick="toggleSidebar()">App Features</a>
+        </div>
+
+        <!-- download-->
+        <div class="nav6">
+            <a href="#download" onclick="toggleSidebar()">Download</a>
+        </div>
+
+    </div>    
+
+    <div class="memberList" id="memberList">
+        <button class="member-closeBtn" onclick="toggleMembers()">✖</button>
+        <div class="mem1">
+            <img src="images/art.png" draggable="false">
+            <h1>Artignian Cuaresma</h1>
+        </div>
+
+        <div class="mem2">
+            <img src="images/ayisha.png" draggable="false">
+            <h1>Ayisha Corre</h1>
+        </div>
+
+        <div class="mem3">
+            <img src="images/chelsy.jpg" draggable="false">
+            <h1>Chelsy Guiterrez</h1>
+        </div>
+
+        <div class="mem4">
+            <img src="images/elaiza.png" draggable="false">
+            <h1>Elaiza Ponteras</h1>
+        </div>
+
+        <div class="mem5">
+            <img src="images/janna.png" draggable="false">
+            <h1>Janna Francisco</h1>
+        </div>
+
+        <div class="mem6">
+            <img src="images/khloe.png" draggable="false">
+            <h1>Khloe Tatel</h1>
+        </div>
+
+        <div class="mem7">
+            <img src="images/reniel.png" draggable="false">
+            <h1>Reniel Jardin</h1>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>JACK-RAE</h1>
+    </div>
+
+    <div class="appContainer">
+
+        <!-- About App -->
+        <div class="about-app" id="aboutApp">
+            <div class="abtApp1">
+                <img id="game-image" src="images/room1.jpg">
+            </div>
+
+            <div class="abtApp2"> 
+                <h3>About App</h3>
+                <p>Long ago, the Sakura Bonsai were kept safe by the Order Gems, and by keeping the Sakura Bonsai safe, 
+                    the dungeon was free to be explore by travelers and adventures alike. 
+                    However, one unfortunate day, the Order Gems were stolen from the Sakura bonsai, and thus, the dungeon fell into chaos. 
+                    Traps and monsters appeared to guard the now powerless Sakura bonsai against all who dared to enter, regardless of foe or an ally.
+                    But after a few decades, the Order Gems were gathered again and are now planned to be returned to the Sakura Bonsai.
+                    Those who gathered the Order Gems appointed Jhin with the task to return the said gems to their respective Sakura Bonsai. 
+                    Jhin was appointed because of his skill in traversing dangerous terrain and obstacles.
+                    Before Jhin left his town, he was awarded the title "Gemkeeper" thus starting quest to return the Order Gems.</p>
+            </div>
+        </div>
+
+        <!-- App Preview -->
+        <div class="game-trailer" id="gameTrailer">
+            <h1 class="trailerTxt">Game Trailer</h1>
+            <video class="trailer" controls>
+                <source src="images/trailer.mp4" type="video/mp4">
+                Your Browser does not support the video tag
+            </video> 
+        </div>
+
+        <!-- App Features -->
+        <div class="app-features" id="appFeatures">
+            <h1 class="featuresTxt" id="featuresTxt">App Features</h1>
+
+            <div class="feature1"><button class="feature-Btn" onclick="feature(this)"
+                data-heading="Very Challenging"
+                data-paragraph="Each level introduces unique challenges: from heavy gravity to slippery surfaces.
+                Adapt quickly or face defeat as the temple tests your skill and patience at every level. 
+                With only 10 lives per game, every move matters. Each loss teaches a lesson, forcing players 
+                to balance risk and reward as they strategize their way to victory. ">
+                <img src="images/WhiteArrowMon.png" draggable="false" alt=""></button></div>
+
+            <div class="feature2"><button class="feature-Btn" onclick="feature(this)"
+                data-heading="Teleportation Kunai"
+                data-paragraph="Master the legendary Teleporter Kunai in order to return to your previous position.
+                One wrong placement could show the difference between life or death. ">
+                <img src="images/kunai.png" draggable="false" alt=""></button></div>
+
+            <div class="feature3"><button class="feature-Btn" onclick="feature(this)"
+                data-heading="Short Story"
+                data-paragraph="Our game features a short story following Jhin the Gemkeeper on his quest to return the Order Gems.
+                Players must beat the game in order to complete the story of the game.">
+                <img src="images/room4.png" draggable="false"></button></div>
+            
+            <div class="feature4"><button class="feature-Btn" onclick="feature(this)"
+                data-heading="Different Traps"
+                data-paragraph="This game has a lot of different traps that makes the game difficult and have a unique feel in every level.">
+                <img src="images/spike.png" draggable="false" alt=""></button></div>
+
+            <div class="featureContent">
+                <h1 id="h1-content">Hi!</h1>
+                <p id="para-content">Please interact with a button :D</p>
+            </div>
+        </div>
+
+        <div class="download" id="download">
+            <h1 class="dlg"> Download Game</h1>
+            <a class="dl1" href="files/Gemkeepers's Quest.zip">
+                <button>PC Version</button>
+            </a>
+
+            <a class="dl2" href="files/GemKeeper's Quest.apk">
+                <button>Mobile Version</button>
+            </a>
+        </div>
+
+        <div class="footer" id="footer">
+            <h1 class="foot1">Copyright @2025</h1>
+            <a href="https://www.facebook.com/artigniancedric.b.curaesma" target="_blank" rel="noopener noreferrer" class="foot2"><img src="images/facebook.png" draggable="false" alt=""></a>
+            <a href="https://www.tiktok.com/@art242007" target="_blank" rel="noopener noreferrer" class="foot3"><img src="images/tik-tok.png" draggable="false" alt=""></a>
+            <a href="https://www.instagram.com/art_nian/" target="_blank" rel="noopener noreferrer" class="foot4"><img src="images/instagram.png" draggable="false" alt=""></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
